@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Canal</title>
+    <style>
+        /* Estilos generales */
+        body {
+            background-color: white; /* Fondo blanco */
+            color: black;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Barra superior */
+        header {
+            background-color: #ADFF2F; /* Verde limón */
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        /* Sección de Juegos */
+        #juegos-lista {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            margin-top: 10px;
+            border-radius: 10px;
+            display: none;
+        }
+
+        #juegos-lista h2 {
+            margin-bottom: 10px;
+        }
+
+        #juegos-lista ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #juegos-lista li {
+            margin: 10px 0;
+        }
+
+        #juegos-lista a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        /* Botón Suscribirse */
+        #subscribe-btn {
+            background-color: #ADFF2F;
+            color: black;
+            border: 2px solid black;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: 0.3s;
+            border-radius: 5px;
+            display: inline-block;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #subscribe-btn:hover {
+            background-color: #88CC00;
+            color: white;
+        }
+
+        /* Ocultar elementos */
+        .oculto {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#" id="juegos-btn">Juegos</a></li>
+                <li><a href="https://www.instagram.com/rmsaxxe" target="_blank">Redes Sociales</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="juegos-lista" class="oculto">
+        <h2>Juegos del Canal</h2>
+        <ul>
+            <li><a href="minecraft.html">Minecraft</a></li>
+        </ul>
+    </section>
+
+    <main>
+        <h1>Bienvenidos a Mi Canal</h1>
+        <p>Disfruta de mi contenido y suscríbete para más novedades.</p>
+
+        <a href="https://www.youtube.com/@Axelito2509" id="subscribe-btn" target="_blank">¡Suscríbete!</a>
+
+        <h2>📢 Últimas noticias</h2>
+        <p>🎥 Nuevo video subido: <strong>"Cómo construir una casa épica en Minecraft"</strong></p>
+        
+        <h2>📌 Sobre el canal</h2>
+        <p>Este canal se dedica a subir juegos gratis gameplays y tutoriales.</p>
+    </main>
+
+    <script>
+        // Mostrar / Ocultar juegos
+        document.getElementById("juegos-btn").addEventListener("click", function() {
+            let juegosLista = document.getElementById("juegos-lista");
+            if (juegosLista.style.display === "none" || juegosLista.style.display === "") {
+                juegosLista.style.display = "block";
+            } else {
+                juegosLista.style.display = "none";
+            }
+        });
+    </script>
+
+</body>
+</html>
