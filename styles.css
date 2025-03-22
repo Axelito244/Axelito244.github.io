@@ -1,0 +1,89 @@
+/* Estilos generales */
+body {
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Barra superior */
+header {
+    background-color: #ADFF2F;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* Sección de Juegos */
+#juegos-lista {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    display: none;
+}
+
+#juegos-lista h2 {
+    margin-bottom: 10px;
+}
+
+#juegos-lista ul {
+    list-style: none;
+    padding: 0;
+}
+
+#juegos-lista li {
+    margin: 10px 0;
+}
+
+#juegos-lista a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Botón Suscribirse */
+#subscribe-btn {
+    background-color: #ADFF2F;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#subscribe-btn:hover {
+    background-color: #88CC00;
+    color: white;
+}
+
+/* Ocultar elementos */
+.oculto {
+    display: none;
+}

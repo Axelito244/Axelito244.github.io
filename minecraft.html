@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minecraft - Última Actualización</title>
     <style>
+        /* Estilos generales */
         body {
             background-color: white;
             color: black;
@@ -14,6 +15,7 @@
             padding: 0;
         }
 
+        /* Barra superior */
         header {
             background-color: #ADFF2F;
             padding: 10px 0;
@@ -39,40 +41,76 @@
             font-size: 1.2em;
         }
 
-        h1 {
-            margin-top: 20px;
+        /* Sección de Juegos */
+        #juegos-lista {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            margin-top: 10px;
+            border-radius: 10px;
+            display: none;
         }
 
-        .descarga {
-            margin-top: 20px;
+        #juegos-lista h2 {
+            margin-bottom: 10px;
         }
 
-        .boton {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 1.2em;
+        #juegos-lista ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #juegos-lista li {
+            margin: 10px 0;
+        }
+
+        #juegos-lista a {
             color: white;
             text-decoration: none;
-            border-radius: 5px;
-            margin: 10px;
-            cursor: pointer;
+            font-size: 1.2em;
         }
 
-        .boton-mediafire {
-            background-color: blue;
+        /* Botón Suscribirse */
+        #subscribe-btn {
+            background-color: #ADFF2F;
+            color: black;
+            border: 2px solid black;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: 0.3s;
+            border-radius: 5px;
+            display: inline-block;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #subscribe-btn:hover {
+            background-color: #88CC00;
+            color: white;
+        }
+
+        /* Ocultar elementos */
+        .oculto {
+            display: none;
         }
     </style>
 </head>
 <body>
 
-    <header>
+    <!-- Sección verde limón con enlaces -->
+    <div style="background-color: #ADFF2F; padding: 10px; color: white; text-align: center;">
         <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Minecraft</a></li>
+            <ul style="list-style: none; padding: 0;">
+                <li style="display: inline; margin-right: 15px;">
+                    <a href="index.html" style="color: white; text-decoration: none; font-size: 18px;">Inicio</a>
+                </li>
+                <li style="display: inline;">
+                    <a href="#" style="color: white; text-decoration: none; font-size: 18px;">Minecraft</a>
+                </li>
             </ul>
         </nav>
-    </header>
+    </div>
 
     <main>
         <h1>Última Actualización de Minecraft</h1>
@@ -82,9 +120,7 @@
         <div class="descarga">
             <h2>Descargar Minecraft</h2>
             <a href="https://link-hub.net/1323409/minecraft" 
-               class="boton boton-mediafire" 
-               target="_blank" 
-               rel="noopener noreferrer">
+               style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; text-align: center; text-decoration: none; border-radius: 5px; font-size: 16px; transition: background-color 0.3s;">
                Descargar en MediaFire
             </a>
         </div>
